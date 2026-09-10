@@ -1,53 +1,65 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #0f172a;
-    color: #f8fafc;
-    margin: 0;
-    padding: 20px;
-  }
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .badge {
-    background: #ef4444;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-  .code-card {
-    background: #1e293b;
-    border: 1px solid #334155;
-    padding: 16px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .code-text {
-    font-family: monospace;
-    font-size: 18px;
-    font-weight: bold;
-    color: #38bdf8;
-    display: block;
-  }
-  .reward {
-    font-size: 12px;
-    color: #94a3b8;
-  }
-  .copy-btn {
-    background: #22c55e;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .copy-btn.copied {
-    background: #3b82f6;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Search Console 站长验证标签 -->
+  <meta name="google-site-verification" content="JwAG5aiMcZ9IPN0WsQ37WOUFrdMTy5AF2gUIgGoSz8c" />
+  
+  <title>[NEW] Blox Fruits Codes (2026) - Free Beli & Exp Boosts!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">UPDATED TODAY</span>
+      <h1>Blox Fruits Working Codes</h1>
+      <p>Copy active codes below before they expire!</p>
+    </header>
+
+    <section class="code-section">
+      <h2>Active Codes (Working)</h2>
+      <div class="code-card">
+        <div class="code-info">
+          <span class="code-text" id="code1">SUB2GAMERROBOT_RESET1</span>
+          <span class="reward">Stat Reset</span>
+        </div>
+        <button class="copy-btn" onclick="copyCode('code1', this)">COPY CODE</button>
+      </div>
+      <div class="code-card">
+        <div class="code-info">
+          <span class="code-text" id="code2">KITT_RESET</span>
+          <span class="reward">Stat Reset</span>
+        </div>
+        <button class="copy-btn" onclick="copyCode('code2', this)">COPY CODE</button>
+      </div>
+    </section>
+
+    <section class="code-section" style="margin-top: 30px;">
+      <h2 style="color: #94a3b8;">Expired Codes</h2>
+      <div class="code-card" style="opacity: 0.6;">
+        <div class="code-info">
+          <span class="code-text" style="text-decoration: line-through; color: #94a3b8;">ADMINGIVEAWAY</span>
+          <span class="reward">20 Min 2x Exp</span>
+        </div>
+        <button class="copy-btn" style="background: #475569; cursor: not-allowed;" disabled>EXPIRED</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function copyCode(elementId, btn) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.innerText;
+        btn.innerText = "COPIED!";
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.classList.remove("copied");
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
