@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[NEW] Blox Fruits Codes (2026) - Free Beli & Exp Boosts!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">UPDATED TODAY</span>
+      <h1>Blox Fruits Working Codes</h1>
+      <p>Copy active codes below before they expire!</p>
+    </header>
+
+    <section class="code-section">
+      <h2>Active Codes (Working)</h2>
+      <div class="code-card">
+        <div class="code-info">
+          <span class="code-text" id="code1">SUB2GAMERROBOT_RESET1</span>
+          <span class="reward">Stat Reset</span>
+        </div>
+        <button class="copy-btn" onclick="copyCode('code1', this)">COPY CODE</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function copyCode(elementId, btn) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = btn.innerText;
+        btn.innerText = "COPIED!";
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.classList.remove("copied");
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
